@@ -21,12 +21,6 @@ header .menu-right-lista {
   float: right;
 }
 
-@media (max-width: 739px) {
-  header .menu-right-lista {
-    float: none;
-  }
-}
-
 /* PARAQUEDISTA */
 
 .paraquedista {
