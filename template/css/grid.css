@@ -2,6 +2,8 @@
   width: 1624px;
   margin: 0 auto;
   position: relative;
+  /*   border: 1px solid rebeccapurple;
+ */
 }
 
 .clearfix::after,
