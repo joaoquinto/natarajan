@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Tranjan Pro";
+  font-family: "Tranjan Pro", serif;
   font-weight: bold;
   color: #707070;
 }
@@ -19,6 +19,12 @@ header .menu-logo-left-1 {
 
 header .menu-right-lista {
   float: right;
+}
+
+@media (max-width: 739px) {
+  header .menu-right-lista {
+    float: none;
+  }
 }
 
 /* PARAQUEDISTA */
@@ -56,7 +62,7 @@ header .menu-right-lista {
 }
 
 .telefone p {
-  font-size: 1.1875;
+  font-size: 1.1875em;
   text-transform: lowercase;
   line-height: 40px;
   width: 733px;
@@ -132,9 +138,13 @@ footer::before {
   line-height: 39px;
 }
 
-/* 
-testando
-ul.redes-socias li {
-  border: 1px solid red;
+.redes-socias {
+  display: flex;
+  justify-content: center;
+  margin: 81px auto;
 }
- */
+
+.redes-socias li a {
+  display: block;
+  margin-right: 30px;
+}
