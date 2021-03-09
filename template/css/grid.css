@@ -74,27 +74,8 @@
   margin-right: -8px;
 }
 
-/* GRID MOBILE 
-
-@media (max-width: 739px) {
+@media (max-width: 1640px) {
   .container {
-    max-width: 300px;
+    width: 1200px;
   }
-
-  .grid-1,
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .grid-5,
-  .grid-6,
-  .grid-7,
-  .grid-8,
-  .grid-9,
-  .grid-10,
-  .grid-11,
-  .grid-12 {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-} */
+}
