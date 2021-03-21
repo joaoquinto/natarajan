@@ -92,12 +92,6 @@ body {
 }
 
 @media (max-width: 1645px) {
-  .vivamus h1,
-  .vivamus p {
-    margin-left: 8px;
-    margin-right: 8px;
-  }
-
   .vivamus h1 {
     font-size: 2.4375em;
     text-align: center;
@@ -117,16 +111,17 @@ body {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 99px;
 }
 
 .woman-tempus {
-  flex: 1 1 calc(41.666% - 16px);
-  margin: 0 16px;
+  flex: 1 1 calc(41.666% - 8px);
+  padding-right: 30px;
 }
 
 .info-tempus {
   flex: 1 1 calc(50% - 16px);
-  margin: 0 16px;
+  margin: 0 8px;
   align-self: center;
 }
 
@@ -145,12 +140,13 @@ body {
 @media (max-width: 854px) {
   .woman-tempus {
     flex: 1 1 calc(100% - 16px);
-    margin: 0 16px;
+    margin: 0 8px;
+    padding-right: 0px;
   }
 
   .info-tempus {
     flex: 1 1 calc(100% - 16px);
-    margin: 0 16px;
+    margin: 0 8px;
     align-self: center;
   }
 
@@ -170,4 +166,77 @@ body {
   }
 }
 
+@media (min-width: 856px) and (max-width: 1657px) {
+  .woman-tempus {
+    margin-left: 8px;
+  }
+}
+
 /* BLACKWOMAN */
+.info-blackwoman {
+  flex: 1 1 50%;
+  max-width: 733px;
+  align-self: center;
+}
+
+.info-blackwoman p {
+  font-size: 1.625em;
+  text-transform: lowercase;
+}
+
+.blackwoman-tempus {
+  flex: 1 1 50%;
+  padding-left: 30px;
+}
+
+@media (max-width: 854px) {
+  .info-blackwoman {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 8px;
+  }
+
+  .blackwoman-tempus {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 8px;
+    padding-left: 0px;
+  }
+
+  .info-blackwoman p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 856px) and (max-width: 1657px) {
+  .info-blackwoman {
+    flex: 1 1 calc(50% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .blackwoman-tempus {
+    flex: 1 1 calc(50% - 8px);
+    margin-right: 8px;
+  }
+}
+
+/* Muda posição de blackwoman-tempus em mobile */
+@media (max-width: 854px) {
+  .woman-tempus {
+    order: 1;
+  }
+  .info-tempus {
+    order: 2;
+  }
+
+  .info-blackwoman {
+    order: 4;
+  }
+
+  .blackwoman-tempus {
+    margin-top: 30px;
+    order: 3;
+  }
+}
