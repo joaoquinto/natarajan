@@ -12,178 +12,162 @@ body {
 /* HEADER */
 
 .menu {
-  margin-top: 60px;
-  margin-bottom: 130px;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.menu .menu-logo-right {
-  float: right;
-  margin-right: 8px;
+.menu-logos {
+  flex: 1;
+  display: flex;
 }
 
-/* INTRO */
+.menu-logos .natarajan-logo {
+  padding-right: 30px;
+}
 
-.intro h1 {
+@media (max-width: 400px) {
+  .menu {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .menu-logos .natarajan-logo {
+    padding-right: 0px;
+  }
+
+  .menu-button {
+    margin: 10px auto;
+    order: -1;
+  }
+}
+
+@media (max-width: 1645px) {
+  .menu {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* VIVAMUS */
+
+.vivamus {
+  max-width: 1640px;
+  margin: 0 auto 78px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.vivamus h1 {
   font-size: 5.4375em;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
-.intro img {
-  margin-bottom: 68px;
+.vivamus p {
+  font-size: 2.125em;
+  font-weight: bold;
+  margin-top: 68px;
+  margin-left: 8px;
 }
 
-.intro p {
-  width: 1593px;
-  margin-bottom: 68px;
-  line-height: 46px;
+@media (max-width: 400px) {
+  .vivamus h1 {
+    font-size: 1.5em;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+  }
+
+  .vivamus p {
+    font-size: 1em;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 30px;
+    text-align: center;
+  }
 }
 
-/* RANDON */
+@media (max-width: 1645px) {
+  .vivamus h1,
+  .vivamus p {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 
-/* RANDON TELFONE */
-.randon .telefone h2 {
+  .vivamus h1 {
+    font-size: 2.4375em;
+    text-align: center;
+  }
+
+  .vivamus p {
+    font-size: 1.125em;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/* TEMPUS */
+
+.tempus {
+  max-width: 1640px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.woman-tempus {
+  flex: 1 1 calc(41.666% - 16px);
+  margin: 0 16px;
+}
+
+.info-tempus {
+  flex: 1 1 calc(50% - 16px);
+  margin: 0 16px;
+  align-self: center;
+}
+
+.info-tempus h2 {
   font-size: 2.375em;
   margin-bottom: 46px;
-  line-height: 40px;
 }
 
-.randon .telefone p {
-  width: 733px;
-  font-size: 1.1875em;
+.info-tempus p {
+  font-size: 1.1875;
   text-transform: lowercase;
-  line-height: 40px;
+  max-width: 733px;
+  line-height: 25px;
 }
 
-.telefone .reposicionar-title {
-  position: relative;
-  top: 250px;
-}
-
-.telefone .reposicionar p {
-  position: relative;
-  top: 250px;
-  font-size: 1.1875em;
-}
-
-/* RANDON TYRELL */
-
-/* RANDON OLADIMEJI */
-
-.oladimeji {
-  margin-bottom: 99px;
-}
-
-.oladimeji p {
-  line-height: 40px;
-  position: relative;
-  top: 400px;
-}
-
-/* RANDON INFO */
-
-.randon-info {
-  display: flex;
-  justify-content: center;
-}
-
-.randon-info p {
-  margin-top: 106px;
-}
-
-/* LOGOS */
-
-.logo-randon {
-  display: flex;
-  justify-content: center;
-  margin-top: 115px;
-}
-
-.natarajan-logos::after {
-  content: "";
-  display: block;
-  width: 1364px;
-  height: 2px;
-  background-image: url(../img/Rectangle3.png);
-  margin: 59px auto 63px auto;
-}
-
-/* FOOTER */
-
-.navegacao {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 97px;
-}
-
-.navegacao h3 {
-  margin-bottom: 57px;
-}
-
-.navegacao .ancoras li a {
-  padding-bottom: 40px;
-  display: inline-block;
-  color: #707070;
-}
-
-.copyright {
-  text-align: center;
-  font-size: 0.875em;
-  width: 992px;
-  margin: 0 auto;
-}
-
-/* REDES SOCIAIS */
-
-.redes-socias {
-  display: flex;
-  justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-.redes-socias li {
-  margin-left: 33.7px;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 1640px) {
-  .intro h1 {
-    font-size: 2.71875em;
-    margin-bottom: 37px;
+@media (max-width: 854px) {
+  .woman-tempus {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 16px;
   }
 
-  .intro p {
-    width: 1190px;
-    margin-bottom: 68px;
-    line-height: 46px;
+  .info-tempus {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 16px;
+    align-self: center;
   }
 
-  .randon .telefone p {
-    width: 510px;
-    font-size: 0.9em;
-    text-transform: lowercase;
-    line-height: 26px;
+  .info-tempus h2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
   }
 
-  .telefone .reposicionar p {
-    position: relative;
-    top: 250px;
-    left: 0px;
-  }
-
-  .oladimeji p {
-    line-height: 40px;
-    position: relative;
-    top: 305px;
-  }
-
-  .natarajan-logos::after {
-    content: "";
-    display: block;
-    width: 980px;
-    height: 2px;
-    background-image: url(../img/Rectangle3.png);
-    margin: 59px auto 63px auto;
+  .info-tempus p {
+    font-size: 1em;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
   }
 }
+
+/* BLACKWOMAN */
