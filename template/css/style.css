@@ -28,6 +28,7 @@ body {
   padding-right: 30px;
 }
 
+/* mobile query */
 @media (max-width: 400px) {
   .menu {
     flex-direction: column;
@@ -44,6 +45,7 @@ body {
   }
 }
 
+/* Desktop query */
 @media (max-width: 1645px) {
   .menu {
     margin-left: 8px;
@@ -72,8 +74,10 @@ body {
   font-weight: bold;
   margin-top: 68px;
   margin-left: 8px;
+  margin-right: 8px;
 }
 
+/* Mobile query */
 @media (max-width: 400px) {
   .vivamus h1 {
     font-size: 1.5em;
@@ -90,6 +94,8 @@ body {
     text-align: center;
   }
 }
+
+/* Desktop query */
 
 @media (max-width: 1645px) {
   .vivamus h1 {
@@ -111,7 +117,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 99px;
+  border: 1px solid red;
 }
 
 .woman-tempus {
@@ -135,6 +141,14 @@ body {
   text-transform: lowercase;
   max-width: 733px;
   line-height: 25px;
+}
+
+/* Mobile query */
+
+@media (max-width: 854px) and (orientation: landscape) {
+  .info-tempus {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 854px) {
@@ -166,6 +180,7 @@ body {
   }
 }
 
+/* Desktop query */
 @media (min-width: 856px) and (max-width: 1657px) {
   .woman-tempus {
     margin-left: 8px;
@@ -187,8 +202,12 @@ body {
 .blackwoman-tempus {
   flex: 1 1 50%;
   padding-left: 30px;
+  margin-bottom: 99px;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Mobile query */
 @media (max-width: 854px) {
   .info-blackwoman {
     flex: 1 1 calc(100% - 16px);
@@ -209,6 +228,7 @@ body {
   }
 }
 
+/* Desktop query */
 @media (min-width: 856px) and (max-width: 1657px) {
   .info-blackwoman {
     flex: 1 1 calc(50% - 16px);
@@ -238,5 +258,54 @@ body {
   .blackwoman-tempus {
     margin-top: 30px;
     order: 3;
+  }
+
+  .modelos-tempus {
+    order: 5;
+  }
+}
+
+/* MODELOSTEMPUS */
+
+.modelos-tempus {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modelos-tempus li {
+  flex: 1 1 calc(33.333% - 99px);
+  margin-right: 99px;
+}
+
+.modelos-tempus .oladimeji-tempus {
+  margin-right: 0px;
+}
+
+/* Mobile query */
+
+@media (max-width: 854px) {
+  .modelos-tempus li {
+    flex: 1 1 calc(33.333% - 18px);
+    margin-right: 10px;
+  }
+
+  .modelos-tempus .tyrel-james-tempus {
+    margin-left: 8px;
+  }
+  .modelos-tempus .oladimeji-tempus {
+    margin-right: 8px;
+  }
+}
+
+/* Desktop query */
+
+@media (min-width: 856px) and (max-width: 1519px) {
+  .modelos-tempus li {
+    flex: 1 1 calc(33.333% - 16px);
+    margin: 0 8px;
+  }
+
+  .modelos-tempus .oladimeji-tempus {
+    margin-right: 8px;
   }
 }
