@@ -119,6 +119,16 @@ body {
   flex-wrap: wrap;
 }
 
+.tempus::after {
+  content: "";
+  width: 1364px;
+  margin: 0 auto;
+  height: 2px;
+  background: url(../img/Rectangle3.png);
+  display: block;
+  margin: 10px auto 63px auto;
+}
+
 .woman-tempus {
   flex: 1 1 calc(41.666% - 8px);
   padding-right: 30px;
@@ -239,6 +249,11 @@ body {
     flex: 1 1 calc(50% - 8px);
     margin-right: 8px;
   }
+
+  .tempus::after {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 /* Muda posição de blackwoman-tempus em mobile */
@@ -262,6 +277,18 @@ body {
   .modelos-tempus {
     order: 5;
   }
+  .info {
+    order: 6;
+  }
+
+  .natarajan-logos-tempus {
+    order: 7;
+  }
+
+  .tempus::after {
+    order: 8;
+    width: 90%;
+  }
 }
 
 /* MODELOSTEMPUS */
@@ -269,6 +296,7 @@ body {
 .modelos-tempus {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 106px;
 }
 
 .modelos-tempus li {
@@ -283,6 +311,9 @@ body {
 /* Mobile query */
 
 @media (max-width: 854px) {
+  .modelos-tempus {
+    padding-bottom: 30px;
+  }
   .modelos-tempus li {
     flex: 1 1 calc(33.333% - 18px);
     margin-right: 10px;
@@ -306,5 +337,69 @@ body {
 
   .modelos-tempus .oladimeji-tempus {
     margin-right: 8px;
+  }
+}
+
+/* INFO */
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.info li {
+  flex: 1 1 calc(41.666% - 51px);
+  margin: 0 17px;
+}
+
+.info p {
+  font-size: 1.1875em;
+  max-width: 569px;
+  text-transform: lowercase;
+}
+
+/* media query mobile */
+
+@media (max-width: 854px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info p {
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 30px;
+  }
+}
+
+/* NATARAJANLOGOS */
+
+.natarajan-logos-tempus {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 59px;
+}
+
+.natarajan-logos-tempus li:nth-child(1) {
+  padding-right: 129px;
+}
+
+/* media query mobile */
+
+@media (max-width: 854px) {
+  .natarajan-logos-tempus {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .natarajan-logos-tempus li {
+    align-self: center;
+  }
+
+  .natarajan-logos-tempus li:nth-child(1) {
+    padding-right: 0px;
+    padding-left: 20px;
   }
 }
