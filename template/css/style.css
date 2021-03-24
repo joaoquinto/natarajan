@@ -64,6 +64,7 @@ body {
 }
 
 .vivamus h1 {
+  color: #585858;
   font-size: 5.4375em;
   margin-bottom: 30px;
   font-weight: bold;
@@ -188,6 +189,15 @@ body {
     text-align: center;
   }
 }
+
+/* try */
+
+/* @media (min-width: 1520px) {
+  .modelos-tempus {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+} */
 
 /* Desktop query */
 @media (min-width: 856px) and (max-width: 1657px) {
@@ -379,6 +389,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding-top: 59px;
   padding-bottom: 59px;
 }
 
@@ -391,6 +402,7 @@ body {
 @media (max-width: 854px) {
   .natarajan-logos-tempus {
     flex-direction: column;
+    padding-top: 30px;
     padding-bottom: 30px;
   }
 
@@ -402,4 +414,96 @@ body {
     padding-right: 0px;
     padding-left: 20px;
   }
+}
+
+/* FOOTER */
+
+.footer {
+  max-width: 1364px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navigation ul {
+  flex: 1 1 16.666%;
+}
+
+.navigation h3 {
+  font-size: 1.1875em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navigation ul li a {
+  color: #707070;
+  font-weight: bold;
+
+  font-size: 1em;
+}
+.navigation ul li {
+  margin-bottom: 40px;
+}
+
+.footer p {
+  font-size: 1em;
+  text-align: center;
+  line-height: 39px;
+}
+
+@media (max-width: 854px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation ul {
+    flex: 1 1 16.666%;
+    text-align: center;
+  }
+
+  .navigation ul::after {
+    content: "";
+    width: 77%;
+    margin: 0 auto;
+    height: 2px;
+    background: url(../img/Rectangle3.png);
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+
+  .footer p {
+    margin: 0 8px;
+  }
+}
+
+@media (min-width: 856px) and (max-width: 1519px) {
+  .footer {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* REDESSOCIAIS */
+
+.redes-socias {
+  margin: 80px auto 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.redes-socias li {
+  margin-right: 30px;
+}
+
+.redes-socias li:nth-child(4) {
+  margin-right: 0px;
 }
