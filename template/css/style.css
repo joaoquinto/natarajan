@@ -12,178 +12,498 @@ body {
 /* HEADER */
 
 .menu {
-  margin-top: 60px;
-  margin-bottom: 130px;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.menu .menu-logo-right {
-  float: right;
+.menu-logos {
+  flex: 1;
+  display: flex;
+}
+
+.menu-logos .natarajan-logo {
+  padding-right: 30px;
+}
+
+/* mobile query */
+@media (max-width: 400px) {
+  .menu {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .menu-logos .natarajan-logo {
+    padding-right: 0px;
+  }
+
+  .menu-button {
+    margin: 10px auto;
+    order: -1;
+  }
+}
+
+/* Desktop query */
+@media (max-width: 1645px) {
+  .menu {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* VIVAMUS */
+
+.vivamus {
+  max-width: 1640px;
+  margin: 0 auto 78px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.vivamus h1 {
+  color: #585858;
+  font-size: 5.4375em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.vivamus p {
+  font-size: 2.125em;
+  font-weight: bold;
+  margin-top: 68px;
+  margin-left: 8px;
   margin-right: 8px;
 }
 
-/* INTRO */
+/* Mobile query */
+@media (max-width: 400px) {
+  .vivamus h1 {
+    font-size: 1.5em;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+  }
 
-.intro h1 {
-  font-size: 5.4375em;
-  margin-bottom: 37px;
+  .vivamus p {
+    font-size: 1em;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 30px;
+    text-align: center;
+  }
 }
 
-.intro img {
-  margin-bottom: 68px;
+/* Desktop query */
+
+@media (max-width: 1645px) {
+  .vivamus h1 {
+    font-size: 2.4375em;
+    text-align: center;
+  }
+
+  .vivamus p {
+    font-size: 1.125em;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
-.intro p {
-  width: 1593px;
-  margin-bottom: 68px;
-  line-height: 46px;
+/* TEMPUS */
+
+.tempus {
+  max-width: 1640px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* RANDON */
+.tempus::after {
+  content: "";
+  width: 1364px;
+  margin: 0 auto;
+  height: 2px;
+  background: url(../img/Rectangle3.png);
+  display: block;
+  margin: 10px auto 63px auto;
+}
 
-/* RANDON TELFONE */
-.randon .telefone h2 {
+.woman-tempus {
+  flex: 1 1 calc(41.666% - 8px);
+  padding-right: 30px;
+}
+
+.info-tempus {
+  flex: 1 1 calc(50% - 16px);
+  margin: 0 8px;
+  align-self: center;
+}
+
+.info-tempus h2 {
   font-size: 2.375em;
   margin-bottom: 46px;
-  line-height: 40px;
 }
 
-.randon .telefone p {
-  width: 733px;
-  font-size: 1.1875em;
+.info-tempus p {
+  font-size: 1.1875;
   text-transform: lowercase;
-  line-height: 40px;
+  max-width: 733px;
+  line-height: 25px;
 }
 
-.telefone .reposicionar-title {
-  position: relative;
-  top: 250px;
+/* Mobile query */
+
+@media (max-width: 854px) and (orientation: landscape) {
+  .info-tempus {
+    max-width: 100%;
+  }
 }
 
-.telefone .reposicionar p {
-  position: relative;
-  top: 250px;
-  font-size: 1.1875em;
+@media (max-width: 854px) {
+  .woman-tempus {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 8px;
+    padding-right: 0px;
+  }
+
+  .info-tempus {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 8px;
+    align-self: center;
+  }
+
+  .info-tempus h2 {
+    margin-top: 30px;
+    font-size: 1.5em;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+  }
+
+  .info-tempus p {
+    font-size: 1em;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+  }
 }
 
-/* RANDON TYRELL */
+/* try */
 
-/* RANDON OLADIMEJI */
+/* @media (min-width: 1520px) {
+  .modelos-tempus {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+} */
 
-.oladimeji {
+/* Desktop query */
+@media (min-width: 856px) and (max-width: 1657px) {
+  .woman-tempus {
+    margin-left: 8px;
+  }
+}
+
+/* BLACKWOMAN */
+.info-blackwoman {
+  flex: 1 1 50%;
+  max-width: 733px;
+  align-self: center;
+}
+
+.info-blackwoman p {
+  font-size: 1.625em;
+  text-transform: lowercase;
+}
+
+.blackwoman-tempus {
+  flex: 1 1 50%;
+  padding-left: 30px;
   margin-bottom: 99px;
-}
-
-.oladimeji p {
-  line-height: 40px;
-  position: relative;
-  top: 400px;
-}
-
-/* RANDON INFO */
-
-.randon-info {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
-.randon-info p {
-  margin-top: 106px;
+/* Mobile query */
+@media (max-width: 854px) {
+  .info-blackwoman {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 8px;
+  }
+
+  .blackwoman-tempus {
+    flex: 1 1 calc(100% - 16px);
+    margin: 0 8px;
+    padding-left: 0px;
+  }
+
+  .info-blackwoman p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1em;
+    text-align: center;
+  }
 }
 
-/* LOGOS */
+/* Desktop query */
+@media (min-width: 856px) and (max-width: 1657px) {
+  .info-blackwoman {
+    flex: 1 1 calc(50% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 
-.logo-randon {
+  .blackwoman-tempus {
+    flex: 1 1 calc(50% - 8px);
+    margin-right: 8px;
+  }
+
+  .tempus::after {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* Muda posição de blackwoman-tempus em mobile */
+@media (max-width: 854px) {
+  .woman-tempus {
+    order: 1;
+  }
+  .info-tempus {
+    order: 2;
+  }
+
+  .info-blackwoman {
+    order: 4;
+  }
+
+  .blackwoman-tempus {
+    margin-top: 30px;
+    order: 3;
+  }
+
+  .modelos-tempus {
+    order: 5;
+  }
+  .info {
+    order: 6;
+  }
+
+  .natarajan-logos-tempus {
+    order: 7;
+  }
+
+  .tempus::after {
+    order: 8;
+    width: 90%;
+  }
+}
+
+/* MODELOSTEMPUS */
+
+.modelos-tempus {
   display: flex;
-  justify-content: center;
-  margin-top: 115px;
+  flex-wrap: wrap;
+  padding-bottom: 106px;
 }
 
-.natarajan-logos::after {
-  content: "";
-  display: block;
-  width: 1364px;
-  height: 2px;
-  background-image: url(../img/Rectangle3.png);
-  margin: 59px auto 63px auto;
+.modelos-tempus li {
+  flex: 1 1 calc(33.333% - 99px);
+  margin-right: 99px;
+}
+
+.modelos-tempus .oladimeji-tempus {
+  margin-right: 0px;
+}
+
+/* Mobile query */
+
+@media (max-width: 854px) {
+  .modelos-tempus {
+    padding-bottom: 30px;
+  }
+  .modelos-tempus li {
+    flex: 1 1 calc(33.333% - 18px);
+    margin-right: 10px;
+  }
+
+  .modelos-tempus .tyrel-james-tempus {
+    margin-left: 8px;
+  }
+  .modelos-tempus .oladimeji-tempus {
+    margin-right: 8px;
+  }
+}
+
+/* Desktop query */
+
+@media (min-width: 856px) and (max-width: 1519px) {
+  .modelos-tempus li {
+    flex: 1 1 calc(33.333% - 16px);
+    margin: 0 8px;
+  }
+
+  .modelos-tempus .oladimeji-tempus {
+    margin-right: 8px;
+  }
+}
+
+/* INFO */
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.info li {
+  flex: 1 1 calc(41.666% - 51px);
+  margin: 0 17px;
+}
+
+.info p {
+  font-size: 1.1875em;
+  max-width: 569px;
+  text-transform: lowercase;
+}
+
+/* media query mobile */
+
+@media (max-width: 854px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info p {
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 30px;
+  }
+}
+
+/* NATARAJANLOGOS */
+
+.natarajan-logos-tempus {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 59px;
+  padding-bottom: 59px;
+}
+
+.natarajan-logos-tempus li:nth-child(1) {
+  padding-right: 129px;
+}
+
+/* media query mobile */
+
+@media (max-width: 854px) {
+  .natarajan-logos-tempus {
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .natarajan-logos-tempus li {
+    align-self: center;
+  }
+
+  .natarajan-logos-tempus li:nth-child(1) {
+    padding-right: 0px;
+    padding-left: 20px;
+  }
 }
 
 /* FOOTER */
 
-.navegacao {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 97px;
-}
-
-.navegacao h3 {
-  margin-bottom: 57px;
-}
-
-.navegacao .ancoras li a {
-  padding-bottom: 40px;
-  display: inline-block;
-  color: #707070;
-}
-
-.copyright {
-  text-align: center;
-  font-size: 0.875em;
-  width: 992px;
+.footer {
+  max-width: 1364px;
   margin: 0 auto;
+  padding: 60px 0;
 }
 
-/* REDES SOCIAIS */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navigation ul {
+  flex: 1 1 16.666%;
+}
+
+.navigation h3 {
+  font-size: 1.1875em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navigation ul li a {
+  color: #707070;
+  font-weight: bold;
+
+  font-size: 1em;
+}
+.navigation ul li {
+  margin-bottom: 40px;
+}
+
+.footer p {
+  font-size: 1em;
+  text-align: center;
+  line-height: 39px;
+}
+
+@media (max-width: 854px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation ul {
+    flex: 1 1 16.666%;
+    text-align: center;
+  }
+
+  .navigation ul::after {
+    content: "";
+    width: 77%;
+    margin: 0 auto;
+    height: 2px;
+    background: url(../img/Rectangle3.png);
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+
+  .footer p {
+    margin: 0 8px;
+  }
+}
+
+@media (min-width: 856px) and (max-width: 1519px) {
+  .footer {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+/* REDESSOCIAIS */
 
 .redes-socias {
+  margin: 80px auto 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 .redes-socias li {
-  margin-left: 33.7px;
+  margin-right: 30px;
 }
 
-/* MEDIA QUERIES */
-
-@media (max-width: 1640px) {
-  .intro h1 {
-    font-size: 2.71875em;
-    margin-bottom: 37px;
-  }
-
-  .intro p {
-    width: 1190px;
-    margin-bottom: 68px;
-    line-height: 46px;
-  }
-
-  .randon .telefone p {
-    width: 510px;
-    font-size: 0.9em;
-    text-transform: lowercase;
-    line-height: 26px;
-  }
-
-  .telefone .reposicionar p {
-    position: relative;
-    top: 250px;
-    left: 0px;
-  }
-
-  .oladimeji p {
-    line-height: 40px;
-    position: relative;
-    top: 305px;
-  }
-
-  .natarajan-logos::after {
-    content: "";
-    display: block;
-    width: 980px;
-    height: 2px;
-    background-image: url(../img/Rectangle3.png);
-    margin: 59px auto 63px auto;
-  }
+.redes-socias li:nth-child(4) {
+  margin-right: 0px;
 }
