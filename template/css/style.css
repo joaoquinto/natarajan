@@ -322,9 +322,9 @@ body {
 
 /* Animations */
 .modelos-tempus li:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+  transform: scaleY(1.2);
   transition: transform 2s;
 }
 
