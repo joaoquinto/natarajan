@@ -311,7 +311,7 @@ body {
   padding-bottom: 106px;
 }
 
-/* Animation */
+/* Animations */
 .modelos-tempus li {
   flex: 1 1 calc(33.333% - 99px);
   margin-right: 99px;
@@ -320,7 +320,7 @@ body {
   transition: all 1s;
 }
 
-/* Animation */
+/* Animations */
 .modelos-tempus li:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
