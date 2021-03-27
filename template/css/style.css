@@ -311,9 +311,21 @@ body {
   padding-bottom: 106px;
 }
 
+/* Animations */
 .modelos-tempus li {
   flex: 1 1 calc(33.333% - 99px);
   margin-right: 99px;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+/* Animations */
+.modelos-tempus li:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: transform 2s;
 }
 
 .modelos-tempus .oladimeji-tempus {
