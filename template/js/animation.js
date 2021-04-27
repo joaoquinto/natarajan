@@ -24,3 +24,17 @@ function initScrollAnimation() {
 }
 
 initScrollAnimation()
+
+function initUpButton() {
+  const button = document.querySelector('.buttonToTop')
+  function upAnimation() {
+    const menu = document.querySelector('.menu')
+    menu.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+
+  button.addEventListener('click', upAnimation)
+}
+
+initUpButton()
