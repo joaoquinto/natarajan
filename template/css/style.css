@@ -533,3 +533,59 @@ body {
   transition: 0.3s;
   transform: translate(0, 0, 0);
 }
+
+.container-up {
+  display: flex;
+  max-width: 1640px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.buttonToTop {
+  width: 50px;
+  height: 50px;
+  background-color: #707070;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttonToTop::before {
+  content: "\2191";
+  color: #fff;
+  position: relative;
+  top: 13px;
+  left: 21px;
+}
+
+.buttonToTop:hover {
+  animation: swing 1s;
+  -moz-animation: swing 1s;
+  -o-animation: swing 1s;
+  transition: animation 0.5s;
+  background-color: #585858;
+}
+
+@keyframes swing {
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+@-moz-keyframes swing {
+  100% {
+    -moz-transform: scale(1.3);
+  }
+}
+
+@-o-keyframes swing {
+  100% {
+    -o-transform: scale(1.3);
+  }
+}
+
+@-webkit-keyframes swing {
+  100% {
+    -webkit-transform: scale(1.3);
+  }
+}
