@@ -1,6 +1,6 @@
 # natarajan
 
-    Um template feito com HTML e CSS para testar minhas habilidade com posicionamento.
+    Um template feito com HTML e CSS para testar minhas habilidades com posicionamento. E com um pouco de javascript e animações.
 
 ## Template Pronto
 
