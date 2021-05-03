@@ -192,15 +192,6 @@ body {
   }
 }
 
-/* try */
-
-/* @media (min-width: 1520px) {
-  .modelos-tempus {
-    margin-right: 8px;
-    margin-left: 8px;
-  }
-} */
-
 /* Desktop query */
 @media (min-width: 856px) and (max-width: 1657px) {
   .woman-tempus {
@@ -497,6 +488,14 @@ body {
   .footer p {
     margin: 0 8px;
   }
+
+  .container-up {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: 856px) and (max-width: 1519px) {
@@ -536,18 +535,23 @@ body {
 
 .container-up {
   display: flex;
-  max-width: 1640px;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .buttonToTop {
+  display: none;
   width: 50px;
   height: 50px;
   background-color: #707070;
   border-radius: 50%;
   cursor: pointer;
+  position: fixed;
+  margin-right: 15px;
+  z-index: 1;
+  flex: 1 1 calc(8.333% - 15px);
 }
 
 .buttonToTop::before {

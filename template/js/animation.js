@@ -25,8 +25,25 @@ function initScrollAnimation() {
 
 initScrollAnimation()
 
+const button = document.querySelector('.buttonToTop')
+
+function initVisible() {
+  function visible() {
+    /* Valida se o scroll e maior ou igual */
+    const validate = window.scrollY >= 500
+    if (validate) {
+      button.style.display = 'block'
+    } else {
+      button.style.display = 'none'
+    }
+  }
+  /* propriedade que recebe a função quando a window tem scroll */
+  window.onscroll = visible
+}
+
+initVisible()
+
 function initUpButton() {
-  const button = document.querySelector('.buttonToTop')
   function upAnimation() {
     const menu = document.querySelector('.menu')
     menu.scrollIntoView({
